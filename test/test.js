@@ -1,6 +1,9 @@
 
+$ = require('jquery');
+require('jquery.transit');
+
 // https://github.com/hankhero/jquery.transit/commit/23e3e6ef2bdcfbcdeb5712a60c96e89cafc8dd47
-(function($) {
+// (function($) {
   /* Simple test framework of sorts */
 
 
@@ -64,4 +67,4 @@
   window.group = group;
   window.test  = test;
 
-})(jQuery);
+// })(jQuery);

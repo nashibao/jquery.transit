@@ -7,7 +7,8 @@
  * http://github.com/rstacruz/jquery.transit
  */
 
-(function($) {
+$ = require('jquery');
+
   $.transit = {
     version: "0.9.9",
 
@@ -515,7 +516,7 @@
     var delay = 0;
     var queue = true;
 
-    var theseProperties = jQuery.extend(true, {}, properties);
+    var theseProperties = $.extend(true, {}, properties);
 
     // Account for `.transition(properties, callback)`.
     if (typeof duration === 'function') {
@@ -705,4 +706,4 @@
 
   // Export some functions for testable-ness.
   $.transit.getTransitionValue = getTransition;
-})(jQuery);
+

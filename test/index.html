@@ -8,36 +8,40 @@
      * Dynamic script loading
      */
 
-    (function() {
-      var m = location.search.match(/jquery=([^&$]*)/);
-      var jQueryVersion = m ? m[1] : "1.8.1";
+    // (function() {
+    //   var m = location.search.match(/jquery=([^&$]*)/);
+    //   var jQueryVersion = m ? m[1] : "1.8.1";
 
-      function addScript(src) {
-        document.write("<scr"+"ipt src='"+src+"'></scr"+"ipt>");
-      }
+    //   function addScript(src) {
+    //     document.write("<scr"+"ipt src='"+src+"'></scr"+"ipt>");
+    //   }
 
-      // Dynamically load jQuery depending on what's passed on get params.
-      if (jQueryVersion === "1.9.0b1") {
-        addScript("http://code.jquery.com/jquery-1.9.0b1.js");
-        addScript("http://code.jquery.com/jquery-migrate-1.0.0b1.js");
-      } else {
-        addScript("http://ajax.googleapis.com/ajax/libs/jquery/"+jQueryVersion+"/jquery.min.js");
-      }
-      addScript("../jquery.transit.js");
-    })();
+    //   // Dynamically load jQuery depending on what's passed on get params.
+    //   if (jQueryVersion === "1.9.0b1") {
+    //     addScript("http://code.jquery.com/jquery-1.9.0b1.js");
+    //     addScript("http://code.jquery.com/jquery-migrate-1.0.0b1.js");
+    //   } else {
+    //     addScript("http://ajax.googleapis.com/ajax/libs/jquery/"+jQueryVersion+"/jquery.min.js");
+    //   }
+    //   addScript("../jquery.transit.js");
+    // })();
+    
   </script>
   
+  <script src="../build/build.js"></script>
   <script src="test.js"></script>
   <link href="style.css" rel="stylesheet" />
 </head>
 <body>
   <div class='use'>
     Use:
+    <!-- 
     <a href='index.html?jquery=1.9.0b1'>jQ 1.9.0b1</a>
     <a href='index.html?jquery=1.8.1'>jQ 1.8</a>
     <a href='index.html?jquery=1.7.0'>jQ 1.7</a>
     <a href='index.html?jquery=1.6.0'>jQ 1.6</a>
     <a href='index.html?jquery=1.5.0'>jQ 1.5</a>
+     -->
     <button class='play-all'>Play all</button>
   </div>
 

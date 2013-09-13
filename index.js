@@ -7,8 +7,7 @@
  * http://github.com/rstacruz/jquery.transit
  */
 
-$ = require('jquery');
-
+module.exports = function($){
   $.transit = {
     version: "0.9.9",
 
@@ -707,3 +706,5 @@ $ = require('jquery');
   // Export some functions for testable-ness.
   $.transit.getTransitionValue = getTransition;
 
+  return $
+}

@@ -1,6 +1,6 @@
 
 $ = require('jquery');
-require('jquery.transit');
+$ = require('jquery.transit')($);
 
 // https://github.com/hankhero/jquery.transit/commit/23e3e6ef2bdcfbcdeb5712a60c96e89cafc8dd47
 // (function($) {
